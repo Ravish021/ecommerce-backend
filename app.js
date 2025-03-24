@@ -10,8 +10,9 @@ const app = express();
 app.use(express.json({limit:'50mb'}));
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+//process.env.FRONTEND_URL
 app.use(cors({
-    origin:process.env.FRONTEND_URL,
+    origin:"*",
     credentials:true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type,Authorization'
