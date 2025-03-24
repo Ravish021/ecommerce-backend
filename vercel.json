@@ -3,7 +3,7 @@
     "name" : "Full Stack",
     "builds" : [
         {
-            "src" : "./index.js",
+            "src" : "./app.js",
             "use" : "@vercel/node"
         }
     ],
